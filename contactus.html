@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تواصل معنا | Big Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootsrtap/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootsrtap/bootstrap.min.css" />
+  </head>
+  <body dir="rtl">
+    <!-- Start Head and Nav  -->
+    <div class="container-fluid">
+      <div class="row">
+        <header class="header">
+          <div class="logo">BIG CART</div>
+          <nav class="nav">
+            <a href="index.html">الرئيسية</a>
+            <a href="products.html">المنتجات</a>
+            <a href="productionsteps.html">مراحل تتبع المنتج</a>
+            <a href="reports.html">التقارير</a>
+            <a href="contactus.html">تواصل معنا</a>
+          </nav>
+          <div>
+            <a href="register.html" class="btn btn-success"> انشاء حساب </a>
+            <a href="login.html" class="btn btn-outline-success">تسجيل دخول </a>
+          </div>
+        </header>
+        <hr />
+      </div>
+    </div>
+    <!-- End Head and Nav  -->
+
+    <!-- Start Contact Us -->
+    <div class="contt">
+      <div class="container">
+        <div class="row contact_form">
+          <h2 class="display-6 text-center fw-bold">تواصل معنا</h2>
+          <form action="">
+            <div class="contact_field col-12">
+              <input type="text" name="" id="" placeholder="الاسم كامل" />
+            </div>
+            <div class="contact_field">
+              <input type="email" name="" id="" placeholder="الإيميل" />
+            </div>
+            <div class="contact_field">
+              <textarea name="" id="" placeholder="طلبك"></textarea>
+            </div>
+            <div>
+              <input
+                type="submit"
+                value="إرسال"
+                name=""
+                class="btn btn-success text-light contact_button"
+              />
+            </div>
+            <div class="contact_icon">
+              <a href="">
+                <img src="images/bootstrap-icons-1.11.3/twitter-x.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="images/bootstrap-icons-1.11.3/instagram.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="images/bootstrap-icons-1.11.3/facebook.svg" alt="" />
+              </a>
+            </div>
+
+            <label for="" class="copyright">bigcart@green.com</label>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Start Subscribe Part -->
+    <section class="container subscribe">
+      <div class="form">
+        <button class="bg-info">Subscribe</button>
+        <input type="text" name="" placeholder="Enter your Email" />
+      </div>
+      <h3 class="text-light m-2">Subscribe Big Cart</h3>
+    </section>
+    <!-- End Subscribe Part -->
+
+    <!-- Start Footer  -->
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-links">
+            <a href="index.html" class="m-2">الرئيسية</a>
+            <a href="products.html" class="m-2">المنتجات</a>
+            <a href="productionsteps.html" class="m-2">مراحل تتبع المنتج</a>
+            <a href="reports.html" class="m-2">التقارير</a>
+            <a href="contactus.html" class="m-2">تواصل معنا</a>
+            <a href="aboutus.html" class="m-2">من نحن</a>
+          </div>
+          <div>
+            <a href="" class="m-3 copyright">Terms of Service</a>
+            <a href="" class="m-3 copyright">Privacy of Policy</a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="social">
+            <a href="#"
+              ><i class="m-2"
+                ><img
+                  src="images/bootstrap-icons-1.11.3/youtube.svg"
+                  alt="" /></i
+            ></a>
+            <a href="#"
+              ><i class="m-2"
+                ><img src="images/bootstrap-icons-1.11.3/vimeo.svg" alt="" /></i
+            ></a>
+            <a href="#"
+              ><i class="m-2"
+                ><img
+                  src="images/bootstrap-icons-1.11.3/twitter-x.svg"
+                  alt="" /></i
+            ></a>
+            <a href="#"
+              ><i class="m-2"
+                ><img
+                  src="images/bootstrap-icons-1.11.3/facebook.svg"
+                  alt="" /></i
+            ></a>
+          </div>
+
+          <div class="copyright">Big Cart All rights reserved &copy; 2024</div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start Script  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".header .nav a");
+        const currentUrl = window.location.href;
+
+        navLinks.forEach((link) => {
+          if (link.href === currentUrl) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+    <!-- End Script  -->
+  </body>
+</html>

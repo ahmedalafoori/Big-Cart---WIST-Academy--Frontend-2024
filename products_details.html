@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تفاصيل المنتجات | Big Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product_detail_style.css" />
+    <link rel="stylesheet" href="css/bootsrtap/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootsrtap/bootstrap.min.css" />
+  </head>
+  <body dir="rtl">
+    <!-- Start Head and Nav  -->
+    <div class="container-fluid">
+      <div class="row">
+        <header class="header">
+          <div class="logo">BIG CART</div>
+          <nav class="nav">
+            <a href="index.html">الرئيسية</a>
+            <a href="products.html">المنتجات</a>
+            <a href="productionsteps.html">مراحل تتبع المنتج</a>
+            <a href="reports.html">التقارير</a>
+            <a href="contactus.html">تواصل معنا</a>
+          </nav>
+          <div>
+            <a href="register.html" class="btn btn-success"> انشاء حساب </a>
+            <a href="login.html" class="btn btn-outline-success">تسجيل دخول </a>
+          </div>
+        </header>
+        <hr />
+      </div>
+    </div>
+    <!-- End Head and Nav  -->
+
+    <!-- Start Prodcuts Details-->
+    <div class="container mt-4">
+      <button class="btn btn-success back-btn">
+        <img
+          src="images/bootstrap-icons-1.11.3/arrow-left-circle.svg"
+          style="filter: invert(100%)"
+        />
+        عودة
+      </button>
+      <div class="product-detail">
+        <img
+          src="images/images.jpeg"
+          alt="Product Image"
+          class="product-image img-fluid"
+        />
+        <div class="product-actions">
+          <div
+            style="
+              background-color: lightgray;
+              border-radius: 50%;
+              width: 35px;
+              height: 35px;
+            "
+          >
+            <img
+              src="images/bootstrap-icons-1.11.3/eye.svg"
+              style="
+                background-color: lightgray;
+                border-radius: 50%;
+                width: 20px;
+              "
+            />
+          </div>
+          <button class="btn btn-success">
+            <img
+              src="images/bootstrap-icons-1.11.3/cart.svg"
+              style="filter: invert(100%)"
+            />
+            إضافة إلى السلة
+          </button>
+          <div
+            style="
+              background-color: lightgray;
+              border-radius: 50%;
+              width: 35px;
+              height: 35px;
+            "
+          >
+            <img src="images/bootstrap-icons-1.11.3/heart.svg" />
+          </div>
+        </div>
+        <h1 class="product-name">التفاح الأحمر</h1>
+        <div class="product-pricing">
+          <span class="former-price">$70.00</span>
+          <span class="current-price">$50.00</span>
+        </div>
+        <div class="product-rating">
+          <span class="stars"> ★★★★★ </span>
+          <span class="rating-count">(123 تقييم)</span>
+        </div>
+        <p class="discount-message text-secondary h5">أسرع ينتهي العرض في:</p>
+        <div class="countdown text-dark" dir="rtl">
+          <span id="days">00</span> يوم <span id="hours">00</span> ساعة
+          <span id="minutes">00</span> دقائق <span id="seconds">00</span> ثواني
+        </div>
+      </div>
+    </div>
+    <!-- End Prodcuts Details-->
+
+    <!-- Start Subscribe Part -->
+    <section class="container subscribe">
+      <div class="form">
+        <button class="bg-info">Subscribe</button>
+        <input type="text" name="" placeholder="Enter your Email" />
+      </div>
+      <h3 class="text-light m-2">Subscribe Big Cart</h3>
+    </section>
+    <!-- End Subscribe Part -->
+
+    <!-- Start Footer  -->
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-links">
+            <a href="index.html" class="m-2">الرئيسية</a>
+            <a href="products.html" class="m-2">المنتجات</a>
+            <a href="productionsteps.html" class="m-2">مراحل تتبع المنتج</a>
+            <a href="reports.html" class="m-2">التقارير</a>
+            <a href="contactus.html" class="m-2">تواصل معنا</a>
+            <a href="aboutus.html" class="m-2">من نحن</a>
+          </div>
+          <div>
+            <a href="" class="m-3 copyright">Terms of Service</a>
+            <a href="" class="m-3 copyright">Privacy of Policy</a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="social">
+            <a href="#"
+              ><i class="m-2"
+                ><img
+                  src="images/bootstrap-icons-1.11.3/youtube.svg"
+                  alt="" /></i
+            ></a>
+            <a href="#"
+              ><i class="m-2"
+                ><img src="images/bootstrap-icons-1.11.3/vimeo.svg" alt="" /></i
+            ></a>
+            <a href="#"
+              ><i class="m-2"
+                ><img
+                  src="images/bootstrap-icons-1.11.3/twitter-x.svg"
+                  alt="" /></i
+            ></a>
+            <a href="#"
+              ><i class="m-2"
+                ><img
+                  src="images/bootstrap-icons-1.11.3/facebook.svg"
+                  alt="" /></i
+            ></a>
+          </div>
+
+          <div class="copyright">Big Cart All rights reserved &copy; 2024</div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start Script  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".header .nav a");
+        const currentUrl = window.location.href;
+
+        navLinks.forEach((link) => {
+          if (link.href === currentUrl) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const endDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000); // 1 day from now
+
+        function updateCountdown() {
+          const now = new Date();
+          const timeRemaining = endDate - now;
+
+          if (timeRemaining <= 0) {
+            document.getElementById("days").textContent = "00";
+            document.getElementById("hours").textContent = "00";
+            document.getElementById("minutes").textContent = "00";
+            document.getElementById("seconds").textContent = "00";
+            return;
+          }
+
+          const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+          document.getElementById("days").textContent = String(days).padStart(
+            2,
+            "0"
+          );
+          document.getElementById("hours").textContent = String(hours).padStart(
+            2,
+            "0"
+          );
+          document.getElementById("minutes").textContent = String(
+            minutes
+          ).padStart(2, "0");
+          document.getElementById("seconds").textContent = String(
+            seconds
+          ).padStart(2, "0");
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      });
+    </script>
+
+    <script>
+      document
+        .querySelector(".back-btn")
+        .addEventListener("click", function () {
+          history.back();
+        });
+    </script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- End Script  -->
+  </body>
+</html>
